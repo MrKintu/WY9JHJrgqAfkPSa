@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block head %}
+Index
+{% endblock %}
+
+{% block body %}
+<h1>Enter Information about your fish.</h1>
+<form class="container card-body form-control" action="/" method="post" 
+    enctype="multipart/form-data" id="predictionForm">
+    <div class="row align-items-center pt-4 pb-3">
+      <label class="col-md-3 ps-5" for="weight"><h6 class="mb-0">
+          Fish Weight:
+      </h6></label>
+      <input type="number" class="col-md-9 pe-5" id="weight" 
+        name="weight" step=".00001"/>
+    </div>
+    <hr class="mx-n3">
+
+    <div class="row align-items-center pt-4 pb-3">
+        <label class="col-md-3 ps-5" for="length1"><h6 class="mb-0">
+            Fish Length 1:
+        </h6></label>
+        <input type="number" class="col-md-9 pe-5" id="length1" 
+            name="length1" step=".00001"/>
+        </div>
+        <hr class="mx-n3">
+
+        <div class="row align-items-center pt-4 pb-3">
+        <label class="col-md-3 ps-5" for="length2"><h6 class="mb-0">
+            Fish Length 2:
+        </h6></label>
+        <input type="number" class="col-md-9 pe-5" id="length2"
+            name="length2" step=".00001"/>
+        </div>
+        <hr class="mx-n3">
+
+        <div class="row align-items-center pt-4 pb-3">
+        <label class="col-md-3 ps-5" for="length3"><h6 class="mb-0">
+            Fish Length 3:
+        </h6></label>
+        <input type="number" class="col-md-9 pe-5" id="length3" 
+            name="length3" step=".00001"/>
+        </div>
+        <hr class="mx-n3">
+
+        <div class="row align-items-center pt-4 pb-3">
+        <label class="col-md-3 ps-5" for="height"><h6 class="mb-0">
+            Fish Height:
+        </h6></label>
+        <input type="number" class="col-md-9 pe-5" id="height" 
+            name="height" step=".00001"/>
+        </div>
+        <hr class="mx-n3">
+
+        <div class="row align-items-center pt-4 pb-3">
+        <label class="col-md-3 ps-5" for="width"><h6 class="mb-0">
+            Fish Width:
+        </h6></label>
+        <input type="number" class="col-md-9 pe-5" id="width" 
+            name="width" step=".00001"/>
+        </div>
+        <hr class="mx-n3">
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-success btn-lg" type="submit">Predict</button>
+    </div>
+</form>
+{% endblock %}
